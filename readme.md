@@ -1,7 +1,13 @@
- ValidFluent
+# Exopite Form Validator
+
+Inspired by: https://github.com/ASoares/PHP-Form-Validation
+
+This class is an extension of ASoares/PHP-Form-Validation class.<br>
+Class and readme based on https://github.com/ASoares/PHP-Form-Validation
+
 ======
  A simple, flexible and easy to use PHP form validation class
-  (uses a fluent interface ) 
+  (uses a fluent interface )
 
 
 **Note:** index.php  has a typical example ,  if anyone decides to use this , please double check the spelling on error messages ;-)
@@ -15,14 +21,14 @@ GPL v2 http://www.gnu.org/licenses/gpl-2.0.txt
 
 **typical use:**
 
-    $valid = new ValidFluent($_POST); 
+    $valid = new ValidFluent($_POST);
     $valid->name('user_name')->required('You must chose a user name!')->alfa()->minSize(5);
     $valid->name('user_email')->required()->email();
     $valid->name('birthdate')->date('please enter date in YYYY-MM-DD format');
     if ($valid->isGroupValid()) echo 'Validation Passed!';
 
  **OR:**
- 
+
     $valid = new ValidFluent($_POST);
   	if ( $valid->name('user_name')->required('You must chose a user name!')->alfa()->minSize(5)
   		    ->name('user_email')->required()->email()
@@ -68,4 +74,3 @@ GPL v2 http://www.gnu.org/licenses/gpl-2.0.txt
 **3- use it**
 
     $Valid->name('testing')->myValidation(10, 'some error msg!');
- 
