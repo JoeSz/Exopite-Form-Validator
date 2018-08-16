@@ -5,7 +5,8 @@ Inspired by: https://github.com/ASoares/PHP-Form-Validation
 This class is an extension of ASoares/PHP-Form-Validation class.<br>
 Class and readme based on https://github.com/ASoares/PHP-Form-Validation
 
-======
+---
+
  A simple, flexible and easy to use PHP form validation class
   (uses a fluent interface )
 
